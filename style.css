@@ -1,0 +1,38 @@
+/* Define light coral orange color */
+:root {
+    --light-coral: #FF6F61; /* Light Coral Orange */
+}
+
+/* Custom styles for the portfolio */
+.custom-image {
+    max-width: 200px; /* Set the max width of the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Navbar style */
+.navbar {
+    background-color: var(--light-coral); /* Set navbar background to coral */
+}
+
+.navbar a {
+    color: white; /* Change navbar links to white */
+}
+
+/* Headings */
+h1, h2 {
+    color: var(--light-coral); /* Light coral color for headings */
+}
+
+/* Optional: Apply light coral to list item links */
+ul li a {
+    color: var(--light-coral); /* Apply light coral to list item links */
+}
+
+ul li a:hover {
+    color: darken(var(--light-coral), 20%); /* Darken coral on hover for links */
+}
+
+/* Container padding for general layout */
+.container {
+    padding: 20px;
+}
