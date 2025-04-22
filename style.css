@@ -10,8 +10,14 @@
 
 /* Custom styles for the portfolio */
 .custom-image {
-    max-width: 200px;
-    height: auto;
+    width: 150px;               /* Width of the image */
+    height: 150px;              /* Height of the image (making it a square) */
+    border-radius: 50%;         /* Makes the image a circle */
+    object-fit: cover;          /* Ensures the image fits the circle properly */
+    margin-top: 20px;           /* Optional: Adds space above the image */
+    display: block;             /* Centers the image inside its container */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .navbar {
