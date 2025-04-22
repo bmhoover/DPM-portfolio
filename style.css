@@ -1,38 +1,38 @@
-/* Define light coral orange color */
+/* Define custom coral and darker text colors */
 :root {
-    --light-coral: #FF6F61; /* Light Coral Orange */
-    --dark-coral: #e55d50;  /* Darker Coral for hover effect */
+    --light-coral: #FF6F61;   /* Light Coral Orange */
+    --dark-coral: #e55d50;    /* Darker Coral for hover effect */
+    --dark-text: #333333;     /* Dark text color for contrast */
+    --accessible-coral: #cc4f2e; /* Darker coral for headings (improved contrast) */
 }
 
 /* Custom styles for the portfolio */
 .custom-image {
-    max-width: 200px; /* Set the max width of the image */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 200px;
+    height: auto;
 }
 
 .navbar {
-    background-color: var(--light-coral); /* Set navbar background to coral */
+    background-color: var(--light-coral); /* Navbar background to light coral */
 }
 
 .navbar a {
-    color: white; /* Change navbar links to white */
+    color: white;
 }
 
-/* Headings */
 h1, h2 {
-    color: var(--light-coral); /* Light coral color for headings */
+    color: var(--accessible-coral); /* Use darker coral for headings for better contrast */
 }
 
 /* Apply light coral to list item links */
 ul li a {
-    color: var(--light-coral); /* Apply light coral to list item links */
+    color: var(--light-coral);
 }
 
 ul li a:hover {
-    color: var(--dark-coral); /* Use darker coral on hover */
+    color: var(--dark-coral); /* Darker coral for hover effect */
 }
 
-/* Container padding for general layout */
 .container {
     padding: 20px;
 }
