@@ -1,10 +1,11 @@
-/* Define custom coral and blue colors */
+/* Define custom dark blue and coral colors */
 :root {
-    --light-coral: #FF6F61;   /* Light Coral Orange */
-    --dark-coral: #e55d50;    /* Darker Coral for hover effect */
-    --dark-text: #333333;     /* Dark text color for contrast */
+    --light-coral: #FF6F61;    /* Light Coral Orange */
+    --dark-coral: #e55d50;     /* Darker Coral for hover effect */
+    --dark-text: #333333;      /* Dark text color for contrast */
     --accessible-coral: #cc4f2e; /* Darker coral for headings (improved contrast) */
-    --link-blue: #007bff;     /* Blue for links with better contrast */
+    --dark-blue: #003366;      /* Dark blue color for links */
+    --light-blue: #3399ff;     /* Lighter blue for hover effect */
 }
 
 /* Custom styles for the portfolio */
@@ -25,14 +26,14 @@ h1, h2 {
     color: var(--accessible-coral); /* Use darker coral for headings for better contrast */
 }
 
-/* Apply light coral to list item links */
+/* Apply dark blue for links in the Connect with Me section */
 ul li a {
-    color: var(--link-blue); /* Blue color for links for better contrast */
+    color: var(--dark-blue); /* Dark blue color for links */
     text-decoration: none;   /* Remove underline */
 }
 
 ul li a:hover {
-    color: var(--dark-coral); /* Darker coral for hover effect */
+    color: var(--light-blue); /* Lighter blue for hover effect */
 }
 
 .container {
