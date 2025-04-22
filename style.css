@@ -1,9 +1,10 @@
-/* Define custom coral and darker text colors */
+/* Define custom coral and blue colors */
 :root {
     --light-coral: #FF6F61;   /* Light Coral Orange */
     --dark-coral: #e55d50;    /* Darker Coral for hover effect */
     --dark-text: #333333;     /* Dark text color for contrast */
     --accessible-coral: #cc4f2e; /* Darker coral for headings (improved contrast) */
+    --link-blue: #007bff;     /* Blue for links with better contrast */
 }
 
 /* Custom styles for the portfolio */
@@ -26,7 +27,8 @@ h1, h2 {
 
 /* Apply light coral to list item links */
 ul li a {
-    color: var(--light-coral);
+    color: var(--link-blue); /* Blue color for links for better contrast */
+    text-decoration: none;   /* Remove underline */
 }
 
 ul li a:hover {
