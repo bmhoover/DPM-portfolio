@@ -45,3 +45,13 @@ ul li a:hover {
 .container {
     padding: 20px;
 }
+
+/* Ensures consistent color for all links */
+a {
+    color: var(--dark-blue);  /* Dark blue color for links */
+    text-decoration: none;    /* Remove underline */
+}
+
+a:hover {
+    color: var(--light-blue);  /* Lighter blue for hover effect */
+}
