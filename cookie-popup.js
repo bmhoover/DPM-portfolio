@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Set a cookie to remember the user's consent
         document.cookie = "cookies_accepted=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/";
 
-        // Redirect to the homepage
+        // Redirect to the homepage after consent
         window.location.href = "index.html";  // This will redirect to the homepage
     });
 
@@ -27,3 +27,4 @@ document.addEventListener('DOMContentLoaded', function () {
         cookieOverlay.style.display = 'none';
     }
 });
+
