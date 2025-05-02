@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Show the popup when the page loads if the user hasn't accepted cookies
     if (document.cookie.indexOf('cookies_accepted=true') === -1) {
-        cookiePopup.style.display = 'block';
-        cookieOverlay.style.display = 'block';
+        cookiePopup.style.display = 'block';  // Show the popup
+        cookieOverlay.style.display = 'block';  // Show the overlay
     }
 
     // Hide the popup and set the cookie when the accept button is clicked
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Set a cookie to remember the user's consent
         document.cookie = "cookies_accepted=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/";
 
-        // Redirect to the homepage after consent
+        // Redirect to the homepage (optional, remove if not needed)
         window.location.href = "index.html";  // This will redirect to the homepage
     });
 
@@ -27,4 +27,3 @@ document.addEventListener('DOMContentLoaded', function () {
         cookieOverlay.style.display = 'none';
     }
 });
-

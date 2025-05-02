@@ -1,27 +1,26 @@
-/* Define custom dark blue and coral colors */
 :root {
-    --light-coral: #FF6F61;    /* Light Coral Orange */
-    --dark-coral: #e55d50;     /* Darker Coral for hover effect */
-    --dark-text: #333333;      /* Dark text color for contrast */
-    --accessible-coral: #cc4f2e; /* Darker coral for headings (improved contrast) */
-    --dark-blue: #003366;      /* Dark blue color for links */
-    --light-blue: #3399ff;     /* Lighter blue for hover effect */
+    --light-coral: #FF6F61;
+    --dark-coral: #e55d50;
+    --dark-blue: #003366;
+    --light-blue: #3399ff;
+    --dark-text: #333333;
+    --accessible-coral: #cc4f2e;
 }
 
 /* Custom styles for the portfolio */
 .custom-image {
-    width: 150px;               /* Width of the image */
-    height: 150px;              /* Height of the image (making it a square) */
-    border-radius: 50%;         /* Makes the image a circle */
-    object-fit: cover;          /* Ensures the image fits the circle properly */
-    margin-top: 20px;           /* Optional: Adds space above the image */
-    display: block;             /* Centers the image inside its container */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 .navbar {
-    background-color: var(--light-coral); /* Navbar background to light coral */
+    background-color: var(--light-coral);
 }
 
 .navbar a {
@@ -29,29 +28,89 @@
 }
 
 h1, h2 {
-    color: var(--accessible-coral); /* Use darker coral for headings for better contrast */
+    color: var(--dark-coral);
 }
 
-/* Apply dark blue for links in the Connect with Me section */
+.card {
+    background-color: var(--light-coral);
+    color: white;
+    border: none;
+    margin: 20px 0;
+}
+
+.card-body h3 {
+    color: white;
+}
+
 ul li a {
-    color: var(--dark-blue); /* Dark blue color for links */
-    text-decoration: none;   /* Remove underline */
+    color: white;
+    text-decoration: underline; /* Underline links */
 }
 
 ul li a:hover {
-    color: var(--light-blue); /* Lighter blue for hover effect */
+    color: var(--light-blue); /* Hover color */
+}
+
+footer {
+    background-color: var(--dark-blue);
+    color: white;
+    padding: 20px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline; /* Underline links */
+}
+
+footer a:hover {
+    color: var(--light-blue);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
 .container {
     padding: 20px;
 }
 
-/* Ensures consistent color for all links */
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.row > .col-md-4 {
+    margin-bottom: 20px;
+}
+
+.card-body a,
+ul li a {
+    color: white;  /* Make these links white */
+    text-decoration: underline; /* Underline links */
+}
+
+.card-body a:hover,
+ul li a:hover {
+    color: var(--light-blue); /* Light blue on hover */
+}
+
+/* Ensure all links are white and underlined */
 a {
-    color: var(--dark-blue);  /* Dark blue color for links */
-    text-decoration: none;    /* Remove underline */
+    color: white;  /* Ensure all links are white */
+    text-decoration: underline; /* Underlined links */
 }
 
 a:hover {
-    color: var(--light-blue);  /* Lighter blue for hover effect */
+    color: var(--light-blue); /* Light blue hover effect */
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer ul li {
+    display: inline;
 }
